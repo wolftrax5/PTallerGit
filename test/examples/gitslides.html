@@ -306,7 +306,45 @@
 					</section>
 					<section>
 						<p><i class="blink">$ git branch testing</i></p>
+						<p>Esto creará un nuevo apuntador apuntando a la misma confirmación donde estés actualmente</p>
 						<img src="https://git-scm.com/figures/18333fig0304-tn.png" alt="">
+					</section>
+					<section>
+						<h3><i>¿Cómo sabe Git en qué rama estás en este momento?</i></h3>
+						<p> Pediante un apuntador especial denominado <i class="blink"> HEAD. </i>
+						es simplemente el apuntador a la rama local en la que tú estés en ese momento. En este caso, en la rama master. Puesto que el comando git branch solamente crea una nueva rama, y no salta a dicha rama.
+						</p>
+						<img src="https://git-scm.com/figures/18333fig0305-tn.png" alt="">
+
+					</section>
+					<section>
+						<p>
+							Para saltar de una rama a otra, tienes que utilizar el comando git checkout. Hagamos una prueba, saltando a la rama testing recién creada:
+						</p>
+						<br>
+						<p><i class="blink">$ git checkout testing</i></p>
+						<img src="https://git-scm.com/figures/18333fig0306-tn.png" alt="">
+						
+					</section>
+					<section>
+						<p> y poder seguir avansando en nuestro proyecto</p>
+						<img src="https://git-scm.com/figures/18333fig0307-tn.png" alt="">
+					</section>
+					<section>
+						Al mover el apuntador HEAD de nuevo a la rama <i class="blink">master</i>, y revierte los archivos de tu directorio de trabajo; dejándolos tal y como estaban en la última instantánea confirmada en dicha rama <i class="blink">master</i>. Esto supone que los cambios que hagas desde este momento en adelante <strong class="blink"> divergirán </strong>de la antigua versión del proyecto. Básicamente, lo que se está haciendo es rebobinar el trabajo que habías hecho temporalmente en la rama <i class="blink">testing</i>; de tal forma que puedas avanzar en otra dirección diferente.
+						<img src="https://git-scm.com/figures/18333fig0308-tn.png" alt="">
+					</section>
+					<section>
+						<img src="https://git-scm.com/figures/18333fig0309-tn.png" alt="">
+					</section>
+					<section>
+						<h2> Procedimientos básicos de fusión</h2>
+						<p> Simplemente, activando (checkout) la rama donde deseas fusionar y lanzando el comando git merge</p>
+						<p>
+							<i class="blink">$ git checkout master</i>
+							<br>
+							<i class="blink">$ git merge nombre_de_rama</i>
+						</p>
 					</section>
 				</section>
 

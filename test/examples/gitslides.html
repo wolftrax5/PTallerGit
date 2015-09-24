@@ -355,16 +355,289 @@
 				</section>
 
 				<section>
+				
+				<section>
+					<h3>Trabajando con repositorios remotos</h3>
+					<p> Los repositorios remotos son versiones de tu proyecto que se encuentran alojados en Internet o en algún punto de la red. </p>
+				</section>
+					<section>
+						<br>
+						<h3>GitHub</h3>
+						<br>
+						<p>Es una plataforma social para construir <u>proyectos</u>.</p>
+					</section>
+					<section>
+						<h3>Workflows</h3>
+						<img src="http://l4c.me/fullsize/github2-1417397149.png" style="width: 600px;px;">
+					</section>
+					<section>
+							<br>
+							<p><b>Exploración: Git Clone</b></p>
+							<br>
+							<p>$ git clone [https or SSH]</p>
+							<p>$ git log (comprobar commits)</p>
+					</section>
+					<section>
+						<br>
+						<img src="http://l4c.me/fullsize/roadmapworkflow2-1417473808.png" style="width: 600;height:500">
+					</section>
+
+					<section>
+						<h3>Ramas Remotas</h3>
+						<p>Son ramas locales que no puedes mover; se mueven automáticamente cuando estableces comunicaciones en la red.</p>
+						<p>Suelen referenciarse como <i class="blink">(remoto)/(rama).</i> </p>
+					</section>
+
+					<section>
+						<p>Para añadir un nuevo repositorio Git remoto, asignándole un nombre con el que referenciarlo fácilmente, ejecuta <i class="blink">$ git remote add [nombre] [url] </i> </p>
+					</section>
+					<section>
+						<br>
+						<p>Subir cambios a GitHub</p>
+						<img src="http://l4c.me/fullsize/repospropios6-1417410793.png">
+					</section>
+
+					<section>
+						<br>
+						<h3>Subir cambios a GitHub</h3>
+						<p>$ git init</p>
+						<p>$ git remote add origin [HTTPS or SSH]</p>
+						<p>$ git remote -v</p>
+						<p>Generamos cambios</p>
+						<p>$ git commit -am "[Mensaje]"</p>
+						<p>$ git push origin master</p>
+					</section>
+					<section>
+						<br>
+						<h3>2) Repositorios propios (Yo + mi equipo)</h3>
+						<br>
+						<p>- Es lo mismo que el proceso anterior.</p>
+						<p>- Todos los cambios que hagan nuestros colaboradores lo subirán al repositorio</p>
+						<p>- Es nuestra obligación, descargar los nuevos cambios antes y después de codificar.</p>
+					</section>	
+
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<img SRC="http://l4c.me/fullsize/propios1-1417471255.png">
+			</section>
+
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<img SRC="http://l4c.me/fullsize/propios3-1417471286.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<img SRC="http://l4c.me/fullsize/propios4-1417471304.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<img SRC="http://l4c.me/fullsize/propios5-1417471320.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<img SRC="http://l4c.me/fullsize/propios6-1417471356.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<img SRC="http://l4c.me/fullsize/propios7-1417471379.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<img SRC="http://l4c.me/fullsize/propios8-1417471393.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<img SRC="http://l4c.me/fullsize/propios9-1417471413.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<img SRC="http://l4c.me/fullsize/propios10-1417471425.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Git Fetch & Git Merge</b></p>
+				<br>
+				<p>Creamos ó entramos a la carpeta de nuestro proyecto</p>
+				<p>$ git init (si apenas vamos a iniciar)</p>
+				<p>$ git remote add origin [HTTS or SSH]</p>
+				<p>$ git fetch origin</p>
+				<p>$ git merge origin/master</p>
+				<p>Hacen cambios</p>
+				<p>$ git fetch origin</p>
+				<p>$ git merge origin/master</p>
+				<p>$ git push origin master</p>
+			</section>
+
+
+			<section>
+				<br>
+				<h3>GitHub Workflows</h3>
+				<br>
+				<p><b>3) Repositorios "forked" (De 3º's, hay gestores)</b></p>
+				<br>
+				<p>- Ustedes no son los dueños pero quieren participar en el desarrollo.</p>
+				<p>- Los dueños del proyecto le dan la visión (que commits sí y que commits no)</p>
+				<p>- Todo esto a través del concepto de Pull Request (PR)</p>
+			</section>
+
+			<section>
+				<br>
+				<p>Subir cambios a GitHub</p>
+				<img src="http://l4c.me/fullsize/repospropios6-1417410793.png">
+			</section>
+
+			<section>
+				<br>
+				<h3>Subir cambios a GitHub</h3>
+				<p>$ git init</p>
+				<p>$ git remote add origin [HTTPS or SSH]</p>
+				<p>$ git remote -v</p>
+				<p>Generamos cambios</p>
+				<p>$ git commit -am "[Mensaje]"</p>
+				<p>$ git push origin master</p>
+			</section>	
+
+			<section>
+				<br>
+				<p><b>Repositorios "forked"</b></p>
+				<br>
+				<p>Necesitamos conectar 2 repositorios.</p>
+				<p>1) Su repositorio forked (el que se colocó en su cuenta de GitHub y son dueños)</p>
+				<p>2) El repositorio principal (no son dueños)</p>
+			</section>	
+
+			<section>
+				<br>
+				<p><b>Repositorios "forked"</b></p>
+				<img src="http://l4c.me/fullsize/final1-1417476172.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Repositorios "forked"</b></p>
+				<img src="http://l4c.me/fullsize/final2-1417476190.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Repositorios "forked"</b></p>
+				<img src="http://l4c.me/fullsize/final3-1417476208.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Repositorios "forked"</b></p>
+				<img src="http://l4c.me/fullsize/final4-1417476231.png">
+			</section>			
+
+			<section>
+				<br>
+				<p><b>Repositorios "forked"</b></p>
+				<img src="http://l4c.me/fullsize/final6-1417476260.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Repositorios "forked"</b></p>
+				<img src="http://l4c.me/fullsize/final7-1417476276.png">
+			</section>
+
+			<section>
+				<br>
+				<p><b>Ciclo final - Repositorios "forked"</b></p>
+				<img src="http://l4c.me/fullsize/final8-1417476301.png">
+			</section>
+
+			
+
+
+			<section>
+				<p><b>Repositorios "forked"</b></p>
+				<br>
+				<p>La idea es:</p>
+				<p>- Siempre que vayamos a iniciar cambios, actualizarnos con el proyecto principal.</p>
+				<p>- Hacer nuestros cambios, experimentos, etc.</p>
+				<p>- Revisar nuevamente si no hubo cambios con el proyecto principal.</p>
+				<p>- Subir a nuestro forked repository todo lo que hemos hecho.</p>
+				<p>- Si queremos, crear un pull request para colaboración.</p>
+			</section>
+
+
+			<section>
+				<br>
+				<p><b>Repositorios "forked"</b></p>
+				<p>Crear ó entrar a la carpeta del proyecto</p>
+				<p>$ git remote add origin [HTTPS ó SSH del proyecto forked]</p>
+				<p>$ git remote add upstream [HTTPS ó SSH del proyecto "main"]</p>
+				<p>$ git fetch upstream</p>
+				<p>$ git merge origin/upstream</p>
+				<p>$ git fetch origin</p>
+				<p>$ git merge origin/master</p>
+				<p>Hacer cambios en local</p>
+				<p>$ git fetch upstream</p>
+				<p>$ git merge origin/upstream</p>
+				<p>$ git push origin master</p>
+			</section>	
+
+			<section>
+				<br>
+				<p><b>Repositorios "forked"</b></p>
+				<br>
+				<p>Si queremos, realizamos un Pull Request al proyecto principal ("main")</p>
+			</section>
+					
+			</section>
+			<section>
+				<section>
+					<h2>
+						Gracias !!
+					</h2>
+				</section>
+				<section>
+					<h3>Creditos a:</h3>
+					<p> <a href="http://filisantillan.com/">Fili Santillán</a></p>
+					<p> <a href="http://miguelnieva.com/">MIGUEL NIEVA</a></p>
+				</section>
+				<section>
+					<h2>The Inventor's House</h2>
+					<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c34.34.431.431/s320x320/163564_238332756308157_635856195_n.png?oh=f11b433f9034e7bd2bc36c33deb6f0df&oe=569D3D7C&__gda__=1453519805_e7431c2eb9389adef6a3de2df0731d8d" alt="">
 					<p>
 						<ul>
-							<il>hola</il>
-							<il>mundo</il>
-							<il>chinga</il>
-							<il>tu madre</il>
+							<li><a href="https://twitter.com/InventorsHouse">@InventorsHouse</a></li>
+							<li><a href="https://www.facebook.com/TheInventorsHouse">https://www.facebook.com/TheInventorsHouse</a></li>
 						</ul>
 					</p>
 				</section>
 
+				<section>
+					<h2>Farmging Code</h2>
+					<img src="http://farmingcode.mx/images/logo.svg" alt="">
+					<p>
+						<ul>
+							<li><a href="https://www.facebook.com/farmingcode">https://www.facebook.com/farmingcode</a></li>
+						</ul>
+					</p>
+				</section>
+			</section>
 			</div>
 
 		</div>

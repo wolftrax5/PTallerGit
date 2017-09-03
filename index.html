@@ -5,14 +5,14 @@
 		<meta charset="utf-8">
 
 		<title>Taller Git UAA</title>
-		
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/gituaa.css">
 
-		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<link rel="stylesheet" target="_blank" href="css/reveal.min.css">
+		<link rel="stylesheet" target="_blank" href="css/gituaa.css">
+
+		<link rel="stylesheet" target="_blank" href="css/theme/night.css" id="theme">
 
 		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" target="_blank" href="lib/css/zenburn.css">
 	</head>
 
 	<body>
@@ -20,10 +20,10 @@
 		<div class="reveal">
 
 			<div class="slides">
-				
+
 				<section>
-					<h1>Taller GIT UAA</h1>
-					<p>Entiende lo Basico para Programar Mejor.</p>
+					<h1>Taller Básico de GIT</h1>
+					<p>Entiende lo Básico para Programar Mejor.</p>
 				</section>
 
 				<section>
@@ -31,8 +31,8 @@
 					<p>
 						Soy <h3>Alejandro Medina Robles</h3>
 					<ul>
-						<li>9º ICI</li>
-						<li>Cofounder de <a href="http://farmingcode.mx/">FarmingCode</a> </li>
+						<li>Ing. ICI</li>
+						<li>Cofounder de <a target="_blank" href="http://farmingcode.mx/">FarmingCode</a> </li>
 						<li>Me gusta el Queso!</li>
 						<li>@wolftrax05</li>
 					</ul>
@@ -41,7 +41,7 @@
 
 				<section>
 					<h2>Que es un Sistema de Control de versiones ?</h2>
-					<p> Los <i class="blink">Vercion Control System</i> son sistemas que reconocen los cambios de un archivo o conjunto de archivos, se puede realizar con cualquier tipo de archivo en un ordenador.</p>
+					<p> Los <i class="blink">VCS (Version Control System)</i> son sistemas que reconocen los cambios de un archivo o conjunto de archivos, se puede realizar con cualquier tipo de archivo en un ordenador.</p>
 				</section>
 
 				<section>
@@ -72,7 +72,7 @@
 
 				<section>
 					<h2>Instalacion</h2>
-					<p>a) Entren a <a href="http://git-scm.com">http://git-scm.com</a></p>
+					<p>a) Entren a <a target="_blank" href="http://git-scm.com">http://git-scm.com</a></p>
 					<p>b) Escoja dependiendo de Windows, Mac, Linux</p>
 
 				</section>
@@ -84,24 +84,14 @@
 					<br>
 					<p>Abrir terminal, consola, bash</p>
 
-					<pre><code data-trim>
-						$ git --version
-					</code></pre>
-					<pre><code data-trim>
-						$ git config --global user.name "TU NOMBRE"
-					</code></pre>
-					<pre><code data-trim>
-					$ git config --global user.email "TU CORREO DE GITHUB"
-					</code></pre>
-					<pre><code data-trim>
-					$ git config --global color.ui true
-					</code></pre>
-					<pre><code data-trim>
-					$ git config --global --list
-					</code></pre>
+					<pre><code data-trim>$ git --version</code></pre>
+					<pre><code data-trim>$ git config --global user.name "TU NOMBRE"</code></pre>
+					<pre><code data-trim>$ git config --global user.email "TU CORREO DE GITHUB"</code></pre>
+					<pre><code data-trim>$ git config --global color.ui true</code></pre>
+					<pre><code data-trim>$ git config --global --list</code></pre>
 
-				</section>	
-				
+				</section>
+
 				<section>
 					<section data-background="#779ECB">
 						<h2>Arquitectura de Arbol</h2>
@@ -287,6 +277,20 @@
 						</figure>
 						<p>Este comando lo que dice es <strong>¡Hey quiero borrar todo!</strong> y en efecto eso es lo que hace, inluyendo tu código.</p>
 					</section>
+					<section class="setenta">
+						<h3>git stash</h3>
+						<figure class="f_hard">
+							<img src="img/stash-capsule.png" alt="git stash">
+						</figure>
+						<p>Cuando quieres recordar el estado actual el working area, pero necesitas regresar a un entorno limpio <br> este comando guarda localmente las modificacions para despues aplicarlas</p>
+					</section>
+					<section class="setenta">
+						<h3>Guardamos / Aplicamos</h3>
+						<pre><code data-trim>$ git stash</code></pre>
+						<pre><code data-trim>$ git stash list</code></pre>
+						<pre><code data-trim>$ git stash save</code></pre>
+						<pre><code data-trim>$ git stash apply</code></pre>
+					</section>
 				</section>
 				</section>
 				<section>
@@ -302,7 +306,7 @@
 
 					<section>
 						<h3><i class="blink">git branch</i></h3>
-						<p>Esto creará un nuevo apuntador apuntando a la misma confirmación donde estés actualmente</p>	
+						<p>Esto creará un nuevo apuntador apuntando a la misma confirmación donde estés actualmente</p>
 					</section>
 					<section>
 						<p><i class="blink">$ git branch testing</i></p>
@@ -614,16 +618,16 @@
 				</section>
 				<section>
 					<h3>Creditos a:</h3>
-					<p> <a href="http://filisantillan.com/">Fili Santillán</a></p>
-					<p> <a href="http://miguelnieva.com/">MIGUEL NIEVA</a></p>
+					<p> <a target="_blank" href="http://filisantillan.com/">Fili Santillán</a></p>
+					<p> <a target="_blank" href="http://miguelnieva.com/">MIGUEL NIEVA</a></p>
 				</section>
 				<section>
 					<h2>The Inventor's House</h2>
 					<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c34.34.431.431/s320x320/163564_238332756308157_635856195_n.png?oh=f11b433f9034e7bd2bc36c33deb6f0df&oe=569D3D7C&__gda__=1453519805_e7431c2eb9389adef6a3de2df0731d8d" alt="">
 					<p>
 						<ul>
-							<li><a href="https://twitter.com/InventorsHouse">@InventorsHouse</a></li>
-							<li><a href="https://www.facebook.com/TheInventorsHouse">https://www.facebook.com/TheInventorsHouse</a></li>
+							<li><a target="_blank" href="https://twitter.com/InventorsHouse">@InventorsHouse</a></li>
+							<li><a target="_blank" href="https://www.facebook.com/TheInventorsHouse">https://www.facebook.com/TheInventorsHouse</a></li>
 						</ul>
 					</p>
 				</section>
@@ -633,7 +637,7 @@
 					<img src="http://farmingcode.mx/images/logo.svg" alt="">
 					<p>
 						<ul>
-							<li><a href="https://www.facebook.com/farmingcode">https://www.facebook.com/farmingcode</a></li>
+							<li><a target="_blank" href="https://www.facebook.com/farmingcode">https://www.facebook.com/farmingcode</a></li>
 						</ul>
 					</p>
 				</section>

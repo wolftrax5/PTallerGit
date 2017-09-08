@@ -361,8 +361,33 @@
 					<section>
 						<p>
 							<i>git log --oneline --graph --all</i>
+						</p>
+						<p>
 							<i>git config --global alias.nicelog 'log --oneline --graph --all'</i>
 						</p>
+					</section>
+					<section>
+						<h3>TAGS</h3>
+						<p>
+							<img src="img/tags.jpg" alt="git tags androindes">
+						</p>
+						<p>
+							<i class="blink">$ git tag</i>
+						</p>
+					</section>
+					<section class="setenta">
+						<h3>Como crear mis tags</h3>
+						<pre><code># este comando lista las tags que tengas en el entordo
+	$ git tag
+</code></pre>
+						<pre><code># -a anota la referencia tag -m anota el mensaje para describir el tag
+	$ git tag -a v1.4.0 -m "mi androide 14"
+</code></pre>
+						<pre><code># para publicar en mi repositorio remoto las tags correspondientes
+	$ git push --tags
+</code></pre>
+
+<a target="_blank" href="http://semver.org/">Cuando hacer un tag ?</a>
 					</section>
 				</section>
 
